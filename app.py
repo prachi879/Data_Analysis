@@ -203,6 +203,7 @@ def predict2():
 
 
         prediction = model2.predict([[wheel_base,curb_weight,engine_size,bore_ratio,horse_power,fueleconomy,car_length,car_width,Fuel_Type_Gas,Aspiration,hardtop,hatchback,sedan,wagon,fwd,rwd,dohcv,l,ohc,ohcf,ohcv,rotor,five,four,six,three,twelve,two,Medium,Highend]])
+        prediction=prediction *77.69
         output = round(prediction[0],2)
 
         if output<0:
