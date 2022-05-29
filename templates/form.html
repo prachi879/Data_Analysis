@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prediction Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+<link rel="stylesheet" href="static\css\formstyle.css">
+  </head>
+  <body>
+    <div class="testbox" align="center">
+        <form action="{{ url_for('predict')}}" method="POST" align="center">
+            <div class="banner">
+                <img src="static/img/form1.jpg" alt="" width="1477" height="300">
+                <h1>PREDICTION  (For Customer)</h1>
+
+        </div>
+        <div class="item">
+          <p>YEAR</p>
+          <div class="name-item">
+            <input type="Number" name ="Year" required="required" value="8">
+          </div>
+        </div>
+        <div class="item">
+          <p>Showroom Price(in Lakhs)</p>
+          <div class="name-item">
+            <input type="Number" name="current_Price" required="required"value="7.628472">
+          </div>
+        </div>
+        <div class="item">
+          <p>Kilometers Driven</p>
+          <div class="name-item">
+            <input type="Number" name="total_kms" required="required" value="36947"></div>
+          </div>
+
+
+        <div class="item">
+              <p>Number of previous Owners</p>
+              <div class="name-item">
+                <select name="Owner" class="name-item center" value='0'>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                  </select>
+              </div>
+         </div>
+         <div class="item">
+            <p>Fuel Type</p>
+            <div class="name-item center">
+                <select name="Fuel_Type_Petrol">
+                    <option value="Petrol;">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                  </select>
+
+            </div>
+         </div>
+         <div class="item">
+            <p>Are you Dealer or Individual</p>
+            <select name="Seller_Type" class="center">
+                <option value="Individual">Individual</option>
+                <option value="Dealer">Dealer</option>
+              </select>
+         </div>
+         <div class="item">
+            <p>Transmission Type</p>
+            <select name="Transmission" class="center">
+              <option value="Manual">Manual</option>
+              <option value="Automatic">Automatic</option>
+            </select>
+
+         </div>
+
+
+
+
+        <div class="btn-block">
+          <br>
+          <button type="submit" href="/">Calculate selling price</button>
+        </div>
+        <br><br>
+        <p class="result"align="center" class="heading">{{ prediction_text }}</p>
+       <br><br>
+      </form>
+  </div>
+  </body>
+</html>

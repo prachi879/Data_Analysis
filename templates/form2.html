@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Prediction Form</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="static\css\formstyle.css">
+</head>
+
+<body>
+  <div class="testbox" align="center">
+    <form action="{{ url_for('predict2')}}" method="POST" align="center">
+      <div class="banner">
+        <img src="static/img/form1.jpg" alt="" width="1477" height="300">
+        <h1>PREDICTION (For Manufacturer)</h1>
+      </div>
+      <div class="item">
+        <p>Car Length</p>
+        <div class="name-item">
+          <input type="Number" name="car_length" required="required" value="174.049268">
+        </div>
+      </div>
+      <div class="item">
+        <p>Car Width</p>
+        <div class="name-item">
+          <input type="Number" name="car_width" required="required" value="65.907805">
+        </div>
+      </div>
+
+      <div class="item">
+        <p>Horse Power</p>
+        <div class="name-item">
+          <input type="Number" name="horse_power" required="required" value="104">
+        </div>
+      </div>
+      <div class="item">
+        <p>Bore Ratio</p>
+        <div class="name-item">
+          <input type="Number" name="bore_ratio" required="required" value="3.329756">
+        </div>
+      </div>
+      <div class="item">
+        <p>Engine Size</p>
+        <div class="name-item">
+          <input type="Number" name="engine_size" required="required" value="126">
+        </div>
+      </div>
+      <div class="item">
+        <p>Curb Weight</p>
+        <div class="name-item">
+          <input type="Number" name="curb_weight" required="required" value="2555">
+        </div>
+      </div>
+      <div class="item">
+        <p>Wheel Base</p>
+        <div class="name-item">
+          <input type="Number" name="wheel_base" required="required" value="98.756585">
+        </div>
+      </div>
+      <div class="item">
+        <div style="display:inline;">
+          <p>City MPG</p>
+          <div class="name-item">
+            <input type="Number" name="citympg" required="required" value="25">
+          </div>
+        </div>
+        <p>Highway MPG</p>
+        <div class="name-item">
+          <input type="Number" name="highwaympg" required="required" value="30">
+        </div>
+        </div>
+
+
+
+  <div class="item">
+    <p>Aspiration</p>
+    <div class="name-item">
+      <select name="Aspiration" class="name-item center">
+        <option value="std">Standard</option>
+        <option value="turbo">Turbo</option>
+      </select>
+    </div>
+  </div>
+  <div class="item">
+    <p>Fuel Type</p>
+    <div class="name-item center">
+      <select name="Fuel_Type">
+        <option value="Gas">Gas</option>
+        <option value="Diesel">Diesel</option>
+      </select>
+
+    </div>
+  </div>
+  <div class="item">
+    <p>Car Body Type</p>
+    <select name="car_body_type" class="center">
+      <option value="convertible">Convertible</option>
+      <option value="hatchback">Hatchback</option>
+      <option value="sedan">Sedan</option>
+      <option value="wagon">Wagon</option>
+      <option value="hardtop">Hardtop</option>
+    </select>
+  </div>
+  <div class="item">
+    <p>Drive Wheel</p>
+    <select name="drive_wheel" class="center">
+      <option value="rwd">Rear-wheel-drive</option>
+      <option value="fwd">Front-wheel-drive</option>
+      <option value="4wd">4-wheel-drive</option>
+    </select>
+  </div>
+  <div class="item">
+    <p>Engine Type</p>
+    <select name="engine_type" class="center">
+      <option value="dohc">Dual overhead cam</option>
+      <option value="ohcv">Overhead Valve</option>
+      <option value="ohc">Overhead Camshaft</option>
+      <option value="rotor">Rotor</option>
+      <option value="ohcf">OHCF</option>
+      <option value="dohcv">Dual Overhead Cam</option>
+      <option value="l">L-Engine</option>
+    </select>
+  </div>
+
+
+  <div class="item">
+    <p>Engine Number</p>
+    <select name="engine_no" class="center">
+      <option value="two">2</option>
+      <option value="three">3</option>
+      <option value="four">4</option>
+      <option value="five">5</option>
+      <option value="six">6</option>
+      <option value="eight">8</option>
+      <option value="twelve">12</option>
+    </select>
+  </div>
+  <div class="item">
+    <p>Range of Car</p>
+    <select name="car_range" class="center">
+      <option value="Medium">Medium</option>
+      <option value="Highend">Highend</option>
+      <option value="Budget">Budget</option>
+    </select>
+  </div>
+
+
+
+
+
+  <div class="btn-block">
+    <br>
+    <button type="submit" href="/">Calculate selling price</button>
+  </div>
+  <br><br>
+  <p class="result"align="center" class="heading">{{ prediction_text }}</p>
+ <br><br>
+  </form>
+  </div>
+</body>
+
+</html>

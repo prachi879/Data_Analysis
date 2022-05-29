@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Car Analysis</title>
+  <!-- <link href="{{url_for('static',filename='img/favicon.ico')}}" rel="icon"> -->
+
+  <link href="https://s.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="static\lib\flaticon\font\flaticon.css" rel="stylesheet">
+  <link href="static\lib\animate\animate.min.css" rel="stylesheet">
+  <link href="static\lib\owlcarousel\assets\owl.carousel.min.css" rel="stylesheet">
+
+  <link href="static\css\style.css" rel="stylesheet">
+
+</head>
+
+    <body>
+      <!-- Top Bar Start -->
+      <div class="top-bar">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-4 col-md-12">
+              <div class="logo">
+                <a href="index.html">
+                  <h1>Car<span>Price</span></h1>
+                  <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+              <div class="row">
+                <div class="col-4">
+                  <div class="top-bar-item">
+                    <div class="top-bar-icon">
+                      <i class="fa fa-phone-alt"></i>
+                    </div>
+                    <div class="top-bar-text">
+                      <h3>Call Us</h3>
+                      <p>+919984096257</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="top-bar-item">
+                    <div class="top-bar-icon">
+                      <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="top-bar-text">
+                      <h3>Email Us</h3>
+                      <p>abc@example.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="nav-bar">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+              <a href="#" class="navbar-brand">MENU</a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav mr-auto">
+                  <a href="index.html" class="nav-item nav-link active">Home</a>
+                  <form action="{{ url_for('about')}}" method="get">
+                    <button href="/" class="nav-item nav-link active">About</button>
+                  </form>
+                  <form action="{{ url_for('contact')}}" method="get">
+                    <button href="/" class="nav-item nav-link active">Contact</button>
+                  </form>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Nav Bar End -->
+
+
+        <!-- Page Header Start -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+
+        <!-- About Start -->
+        <div class="about" id="about">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="about-img">
+                  <img src="static\img\prediction.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="section-header text-left">
+                  <p>About Us</p>
+                  <h2>Price Prediction</h2>
+                </div>
+                <div class="about-content">
+                  <p>
+                    We predict the possible market price for a car:
+                  </p>
+                  <ul>
+                    <li><i class="far fa-check-circle"></i>Valuable price at which customer can sell their car on the basis of its past usage and other major factors. </li>
+                    <li><i class="far fa-check-circle"></i>Price range between which a manufacturer should launch the car based on its salient features </li>
+                  </ul>
+                  <a class="btn btn-custom" href="https://github.com/prachi879/Data-Analysis-and-Pice-Prediction">Get Code</a>
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <div class="row align-items-center">
+              <div class="col-lg-6">
+                <div class="about-img">
+                  <img src="static\img\about.jpg" alt="Image">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="section-header text-left">
+                  <h2>Data Analysis</h2>
+                </div>
+                <div class="about-content">
+                  <p>
+                    we have analysed the preferences of automobiles by different segments of user:
+                  </p>
+                  <ul>
+                    <li><i class="far fa-check-circle"></i>Plotting of frequency graphs of: Segmentation, Gender,Marriage & Profession</li>
+                    <li><i class="far fa-check-circle"></i>Distribution graph of : Age, Work Experience & Family size </li>
+                  </ul>
+                  <a class="btn btn-custom" href="https://github.com/prachi879/Data-Analysis-and-Pice-Prediction">Get Code</a>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+        <!-- About End -->
+
+
+        <!-- Footer Start -->
+        <div class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-contact">
+                  <h2>Get In Touch</h2>
+                  <p><i class="fa fa-map-marker-alt"></i>123 Street, Bihar, India</p>
+                  <p><i class="fa fa-phone-alt"></i>+919984096257</p>
+                  <p><i class="fa fa-envelope"></i>abc@example.com</p>
+                  <div class="footer-social">
+                    <a class="btn" href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn" href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a>
+                    <a class="btn" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+                    <a class="btn" href="www.linkedin.com/in/prachi-967442201"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6">
+                <div class="footer-newsletter">
+                  <h2>Newsletter</h2>
+                  <form>
+                    <input class="form-control" placeholder="Full Name">
+                    <input class="form-control" placeholder="Email">
+                    <a href="mailto:someone@example.com" class="btn btn-custom">Submit</a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer End -->
+
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+            <div class="loader"></div>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+
+        <!-- Contact Javascript File -->
+        <!-- <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script> -->
+
+        <!-- Template Javascript -->
+  <script src="static\js\main.js"></script>    </body>
+</html>
